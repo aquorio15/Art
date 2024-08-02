@@ -4,13 +4,13 @@ OUTPUT="/nfsshare/Amartya/EMNLP-WACV/Internship/checkpoint"
 
 CUDA_VISIBLE_DEVICES=0 python /nfsshare/Amartya/EMNLP-WACV/Internship/Qwen-VL-finetune/finetune.py \
     --model_name_or_path ${MODEL} \
-    --data_path ${DATA}/train1.json \
+    --data_path ${DATA} \
     --fp16 \
     --fix_vit \
     --output_dir ${OUTPUT} \
-    --num_train_epochs 2 \
-    --per_device_train_batch_size 8 \
-    --per_device_eval_batch_size 8 \
+    --num_train_epochs 1 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 8 \
     --evaluation_strategy "no" \
     --save_strategy "steps" \
