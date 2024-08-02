@@ -1,8 +1,14 @@
 tiktoken
-transformers_stream_generator
 einops
 optimum
 auto-gptq
 peft
 deepspeed
 accelerate
+transformers==4.32.0
+transformers_stream_generator==0.0.4
+scipy
+torchvision
+pillow
+tensorboard
+matplotlib
