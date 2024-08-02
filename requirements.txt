@@ -3,7 +3,6 @@ transformers_stream_generator
 einops
 optimum
 auto-gptq
-mpi4py
 peft
 deepspeed
 accelerate
